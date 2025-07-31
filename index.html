@@ -38,6 +38,10 @@
         button:hover {
             background-color: #0056b3;
         }
+        .content {
+            display: none;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -47,12 +51,25 @@
         <button onclick="checkPassword()">Войти</button>
     </div>
 
+    <div class="content">
+        <header>
+            <img src="">
+            <h4>SuperLisSites</h4>
+        </header>
+        <main>
+            <h1>Мой дневничок</h1>
+        </main>
+        <footer>
+            <p> 2025 ©SuperLisSites - Byography</p>
+        </footer>
+    </div>
+
     <script>
         function checkPassword() {
             const password = document.getElementById('passwordInput').value;
             if (password === 'E666EE63') {
                 alert('Пароль верный! Вы можете продолжить.');
-                // Здесь можно добавить код для отображения контента
+                document.querySelector('.content').style.display = 'block';
             } else {
                 alert('Неверный пароль. Попробуйте снова.');
             }
