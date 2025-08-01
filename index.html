@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protected Page</title>
+    <title>Дневник</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -70,6 +70,7 @@
             if (password === 'E666EE63') {
                 alert('Пароль верный! Вы можете продолжить.');
                 document.querySelector('.content').style.display = 'block';
+                document.querySelector('.login-form').style.display = 'none';
             } else {
                 alert('Неверный пароль. Попробуйте снова.');
             }
